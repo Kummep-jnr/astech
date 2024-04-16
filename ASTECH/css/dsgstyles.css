@@ -1,0 +1,114 @@
+body{
+    background-color: #B3C8CF;
+}
+
+/* pics */
+.carousel-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* or "contain" depending on your preference */
+}
+
+
+
+.fixed-text {
+    position: fixed;
+    top: -50px;
+    left: 80%;
+    transform: translateX(-50%);
+    width: 40%;
+    text-align: center;
+    background-color: transparent;
+    animation: moveText 10s linear infinite;
+    }
+    
+    /* Animation keyframes */
+@keyframes moveText {
+     0% {
+     top: -50px;
+            
+        }
+    
+    100% {
+        top: 100%;
+    
+        }
+    }
+
+@media only screen and (max-width: 768px) {
+    .fixed-text {
+            position: fixed;
+            top:2%;
+            left:-50px;
+            transform: translateY(-50%);
+            width: auto;
+            white-space: nowrap;
+            font-family: mon;
+            background-color: white;
+            animation: moveText 20s linear infinite;
+            }
+            
+            /* Animation keyframes */
+            @keyframes moveText {
+                0% {
+                    left: -50px;
+                }
+            
+                100% {
+                    left: 100%;
+                }
+            }
+}
+
+
+
+
+/* contact us */
+.fixed-link {
+    position: fixed;
+    bottom: 50%;
+    right: 20px;
+    background-color: transparent;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+    /* contact us */
+        .fixed-link {
+        position: fixed;
+        bottom: 20%;
+        left: 20px;
+        background-color: transparent;
+        color: black;
+        padding: 10px 15px;
+        border-radius: 5px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        z-index: 999;
+        }
+
+    }
+
+.fixed-icon {
+    width: 10px;
+    margin-right: 25px;
+}
+
+.fixed-text2 {
+    font-size: 2.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .fixed-text2 {
+        font-size: 1.5rem;
+    }
+}
+
+

@@ -1,0 +1,158 @@
+body{
+    background-color: #50b8e7;
+}
+
+.head{
+    text-align: center;
+    font-family: "Exo 2";
+    font-weight:600;
+    font-size: 3.5rem;
+    padding: 3% 5% 3%;
+
+}
+
+/* ads image */
+.ads-image{
+    width: 90%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+        
+}
+
+/* features */
+.feature-text{
+    font-family: "Exo 2";
+    text-align: center;
+    color: #fff;
+    padding: 3% 5% 3%;
+}
+
+.feature-img{
+    width: 50%;
+    height: auto;
+    border-radius: 20%;
+    padding: 5% 7% 5%;
+    display: block;
+    margin: 0 auto;
+}
+
+.f-txt1{
+    color: #fff;
+    text-align: center;
+    font-family: "montserret";
+    padding: 3% 5% 3%;
+}
+
+.f-txt{
+    color: grey;
+    text-align: center;
+    font-family: "montserret";
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/* footer */
+
+.foot-text{
+    color: #fff;
+    text-align: center;
+    padding: 3% 5% 3%;
+
+}
+
+.counter {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+}
+hr {
+    width: 50px;
+    height: 5px;
+    background-color: #fff;
+    margin: 20px auto;
+}
+
+
+/* contact us */
+.fixed-link {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color:transparent;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+     .fixed-link {
+        position: fixed;
+        bottom: 5px;
+        right: 5px;
+        background-color: transparent;
+        color: #fff;
+        padding: 10px 15px;
+        border-radius: 5px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.fixed-icon {
+    width: 10px;
+    margin-right: 25px;
+}
+
+.fixed-text {
+    font-size: 2.5rem;
+}
+@media only screen and (max-width: 768px) {
+    .fixed-text {
+            font-size: 1.5rem;
+        }
+    }
+
+
+/* footer */
+.ss-copyright {
+    text-align: center;
+    font-family: "montserrat";
+    padding: 4% 0 4%;
+    color: grey;
+
+}
+
+/* back-to-top */
+.back-to-top {
+    position: fixed;
+    left: 30px;
+    bottom: 20px;
+    display: flex;
+    width: 58px;
+    height: 58px;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+}
+
+@media only screen and (max-width: 768px) {
+    /* back-to-top */
+        .back-to-top {
+        position: fixed;
+        left: 30px;
+        bottom: 20px;
+        display: flex;
+        width: 38px;
+        height: 38px;
+        align-items: center;
+        justify-content: center;
+        z-index: 99;
+        }
+
+

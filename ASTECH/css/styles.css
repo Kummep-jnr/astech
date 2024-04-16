@@ -1,0 +1,284 @@
+body {
+    background-color:#074173;
+}
+/* navbar */
+.navbar-brand h1 {
+    font-weight: bold;
+}
+
+.topbar-top a,
+.topbar-info a {
+    color: white;
+}
+
+/* homepage */
+.homepage-text {
+    font-size: 3.5rem;
+    line-height: 1.5;
+    font-weight: bold;
+    font-family:"Exo 2";
+    color: #fff;
+    padding: 2% 5% ;
+    text-align: center;  
+}
+
+@media only screen and (max-width: 768px) {
+    .homepage-text {
+        font-size: 2rem;
+        line-height: 1;
+        font-weight: bold;
+        font-family: "Exo 2";
+        color: #fff;
+        padding: 2% 5%;
+        text-align: center;
+    
+        }
+
+}
+
+
+/* carousel */
+.btn.btn-primary {
+    box-shadow: inset 0 0 0 0 var(--bs-dark);
+}
+
+.btn.btn-primary:hover {
+    box-shadow: inset 200px 0 0 0 var(--bs-dark) !important;
+    color: var(--bs-primary) !important;
+}
+
+.btn.btn-dark {
+    box-shadow: inset 0 0 0 0 var(--bs-primary);
+}
+
+.btn.btn-dark:hover {
+    box-shadow: inset 200px 0 0 0 var(--bs-primary);
+    color: var(--bs-dark) !important;
+}
+
+
+
+
+/*** Navbar Start ***/
+.navbar .navbar-nav {
+    padding: 15px 0;
+}
+
+.navbar .navbar-nav .nav-link {
+    padding: 15px;
+    color: var(--bs-white);
+    font-weight: 500;
+    font-size: 16px;
+    outline: none;
+    transition: .5s;
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active {
+    color: var(--bs-primary);
+    transition: .5s;
+}
+
+.navbar .dropdown-toggle::after {
+    border: none;
+    content: "\f107";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 800;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+
+@media (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu {
+        display: block;
+        visibility: hidden;
+        top: 100%;
+        transform: rotateX(-75deg);
+        transform-origin: 0% 0%;
+        transition: .5s;
+        opacity: 0;
+    }
+}
+
+.dropdown .dropdown-menu a:hover,
+.dropdown .dropdown-menu a.active {
+    background: var(--bs-dark);
+    color: var(--bs-primary);
+}
+
+.navbar .nav-item:hover .dropdown-menu {
+    transform: rotateX(0deg);
+    visibility: visible;
+    transition: .5s;
+    opacity: 1;
+}
+
+.navbar-toggler {
+    background: var(--bs-secondary);
+    color: var(--bs-light) !important;
+    padding: 5px 12px;
+    border: 2px solid var(--bs-primary) !important;
+}
+
+ 
+/*** Navbar End ***/
+
+/*** Carousel Start ***/
+
+.carousel-item {
+    position: relative;
+}
+
+.carousel-item::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .7);
+}
+
+.carousel-caption {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: start;
+    z-index: 1;
+}
+
+.carousel-content h4,
+.carousel-content h1 {
+font-family: "Exo 2";
+font-weight: bold;
+}
+.carousel-control-prev {
+    width: 80px;
+    height: 60px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background: var(--bs-primary);
+    border-radius: 0 30px 30px 0;
+    transition: .5s;
+    opacity: 1;
+}
+
+
+.carousel-control-next {
+    width: 80px;
+    height: 60px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    background: var(--bs-primary);
+    border-radius: 30px 0 0 30px;
+    transition: .5s;
+    opacity: 1;
+}
+
+#carouselId .carousel-indicators li,
+#carouselId .carousel-indicators li {
+    width: 24px;
+    height: 24px;
+    background: var(--bs-dark);
+    border: 2px solid var(--bs-primary);
+    border-radius: 24px;
+    margin: 0 10px 30px 10px;
+}
+
+#carouselId .carousel-indicators li.active {
+    background: var(--bs-primary) !important;
+}
+
+@media (max-width: 768px) {
+    .carousel-item {
+        width: 100%;
+        height: 400px;
+    }
+
+    .carousel-item img {
+        height: 400px;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        display: none;
+    }
+
+}
+
+.about {
+    font-family: "montserrat";
+    background-color: #fff;
+    text-align: center;
+    color: grey;
+    padding: 3% 7% 5%;
+}
+
+/* footer */
+.ss-copyright {
+    text-align: center;
+    font-family: "montserrat";
+    padding: 4% 0 4%;
+
+}
+
+/* back-to-top */
+.back-to-top {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    display: flex;
+    width: 58px;
+    height: 58px;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+}
+
+
+
+/* Preloader styles */
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    /* Change the background color if needed */
+    z-index: 9999;
+    /* Make sure it's on top */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spinner {
+    border: 4px solid #f3f3f3;
+    /* Light grey */
+    border-top: 4px solid #3498db;
+    /* Blue */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    /* Spin animation */
+}
+
+/* Spin animation */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Hide the content until it's loaded */
+.content {
+    display: none;
+}
